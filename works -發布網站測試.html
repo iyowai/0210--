@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="When Great Minds Don’t Think Alike" />
+	<meta property="og:description" content="How much does culture influence creative thinking?" />
+	<meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+	
+	<title>worksss</title>
+		<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="plugins/icon/css/font-awesome.min.css">
+<link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.css">
+<link rel="stylesheet" href="plugins/fancybox-master/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="wrapper">
+
+ 	<header>
+	<div class="header">
+		<div class="navbar">
+		<div class="container">
+			<!-- <a href="#footer" class="btn">ABOUT ME</a> -->
+			<ul id="popup-menu" class="menu">
+				<li class="works-item">
+							<a href="">DESIGN</a>
+						</li>
+
+						<li class="works-item">
+						<a href="">FINE ART</a>
+						</li>
+
+				        <li class="menu-item">
+							<a href="index.html" target="_blank">BACK</a>
+						</li>
+						<li class="menu-item">	
+							<a href="#footer" class="btn">CONTACT</a>
+						</li>
+			    </ul>
+			      </div>
+  </div>
+  </div>
+  </header>
+
+ 
+
+
+<!-- main -->
+<div class="about-main">
+
+
+<!-- design tt-->
+<div class="js-moveInUp">
+<div id="design" class="hero hero-bgc-gray">
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-lg-9 col-md-12">
+							<div class="works-ds">
+								<h1 class="title">DESIGN</h1>
+									
+							</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+				</div>
+
+
+<!-- design -->
+
+<!-- <div id="design" class="hero hero-bgc-gray"> -->
+	<div class="container">
+<div class="owl-carousel owl-theme js-moveInUp">
+	
+<div class="list-item">
+	<a href="img/design/img-1.jpg" data-fancybox="group1" class="image-container">
+		<div class="image" style="background-image: url('img/design/img-1.jpg')"></div>
+	</a>
+	<p class="description">DM設計</p>
+
+</div>
+
+<div class="list-item">
+	<a href="img/design/img-3.jpg" data-fancybox="group1" class="image-container">
+		<div class="image" style="background-image: url('img/design/img-3.jpg')"></div>
+	</a>
+<p class="description">DM設計</p>
+
+ </div>
+</div>
+
+
+
+
+
+ 				
+<!-- fine art -->
+		
+
+</div>
+<!-- </div> -->
+ </div>
+
+<!-- footer -->
+<div id="footer" class="footer" >
+
+ 				<div class="container">
+ 					<div class=" animated infinite bounce up" style="animation-duration:2s;animation-iteration-count:1">
+ 					<div class="section-intro">
+ 						<h2 id="contact" class="title">CONTACT<h2>
+ 						<p class="description">與我聯絡！</p>
+ 					<div>
+						<i class="fa fa-mobile " aria-hidden="true">  +886 978-589-922   </i>
+ 						<i class="fa fa-envelope" aria-hidden="true">           yaya07217@gmail.com</i>
+ 				    </div>
+ 				    
+
+ 					</div>
+ 					</div>
+ 				</div>				
+ </div>
+
+ <!-- script -->
+ <script src="plugins/jquery/jquery-3.2.1.min.js"></script>
+ <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
+
+<script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
+<script src="plugins/fancybox-master/jquery.fancybox.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+		// Scrollreveal initialize
+		window.sr = ScrollReveal({
+			reset: true,
+			duration: 800,
+			distance: '100px',
+			mobile: false
+		});
+		sr.reveal('.js-moveInUp');
+		sr.reveal('.js-moveInRight',{
+			origin: 'left'
+		});
+		sr.reveal('.js-moveInLeft',{
+			origin: 'right'
+		});
+		sr.reveal('.index-service .js-moveInUp',100);
+		sr.reveal('.menu-list-1 .js-moveInUp',100);
+		sr.reveal('.menu-list-2 .js-moveInUp',100);
+		sr.reveal('.index-contact .js-moveInUp',200);
+
+		// Owl-carousel initialize
+		$(".owl-carousel").owlCarousel({
+			loop: true,
+			margin: 32,
+			nav: true,
+			responsive:{
+		        0:{
+		            items:2
+		        },
+		        769:{
+		            items:4
+		        }
+		    }
+		});
+
+       		// fancybox option
+		$("[data-fancybox]").fancybox({
+			loop : true,
+			buttons : [
+		        // 'slideShow',
+		        // 'fullScreen',
+		        // 'thumbs',
+		        // 'share',
+		        'close'
+		    ],
+		    infobar : false
+		});
+
+	})
+		
+
+</script>
+
+
+	
+</body>
+
+
+
+
+</html>
